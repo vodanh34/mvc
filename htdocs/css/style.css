@@ -1,0 +1,63 @@
+body {
+    overflow-y: scroll;
+    width: 800px;
+    margin: 8px auto;
+    padding-left: 1em;
+    border-left: 1px solid #ccc;
+}
+
+main {
+    min-height: 20em;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    min-height: 4em;
+    text-align: center;
+    clear: both;
+}
+
+.button {
+    float: left;
+    margin: 2px;
+    padding: 4px;
+    font-size: 1em;
+}
+
+.sum-clear {
+    clear: both;
+    padding-top: 10px;
+}
+
+/**
+* Style a dice using UTF-8 characters.
+*/
+.dice-utf8 .dice-1::after { content: "\2680"; }
+.dice-utf8 .dice-2::after { content: "\2681"; }
+.dice-utf8 .dice-3::after { content: "\2682"; }
+.dice-utf8 .dice-4::after { content: "\2683"; }
+.dice-utf8 .dice-5::after { content: "\2684"; }
+.dice-utf8 .dice-6::after { content: "\2685"; }
+
+.dice-utf8 {
+   font-size: 3em;
+}
+
+/**
+* CSS sprite for a dice with six faces.
+*/
+.dice-sprite {
+   display: inline-block;
+   padding: 0;
+   margin: 0 4px 0 0;
+   width: 32px;
+   height: 32px;
+   background: url(../img/dice-faces.jpg) no-repeat;
+}
+
+.dice-sprite.dice-1 { background-position: -160px 0; }
+.dice-sprite.dice-2 { background-position: -128px 0; }
+.dice-sprite.dice-3 { background-position: -96px 0; }
+.dice-sprite.dice-4 { background-position: -64px 0; }
+.dice-sprite.dice-5 { background-position: -32px 0; }
+.dice-sprite.dice-6 { background-position: 0 0; }
